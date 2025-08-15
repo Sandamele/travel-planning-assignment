@@ -14,10 +14,3 @@ current forecast.
 2. It calls the Open-Meteo API to get the weather forecast.
 3. It evaluates the weather to determine which activities are most suitable.
 4. The API returns the weather forecast along with a ranked list of recommended activities.
-
-## API links 
-#### search for city name
-https://geocoding-api.open-meteo.com/v1/search?name=durban
-
-#### weather forecast
-https://api.open-meteo.com/v1/forecast?latitude=-29.8587&longitude=31.0218
