@@ -12,14 +12,14 @@ type DailyWeather {
     Weather code representing conditions (e.g., sunny, rainy, snow).
     """
     weather_code: String!
-    snowfall_sum: Float
-    temperature_2m_max: Float
-    temperature_2m_min: Float
-    precipitation_sum: Float
-    wind_speed_10m_max: Float
-    uv_index_max: Float
-    sunshine_duration: Float
-    daylight_duration: Float
+    snowfall_sum: String
+    temperature_2m_max: String
+    temperature_2m_min: String
+    precipitation_sum: String
+    wind_speed_10m_max: String
+    uv_index_max: String
+    sunshine_duration: String
+    daylight_duration: String
 }
 
 """
