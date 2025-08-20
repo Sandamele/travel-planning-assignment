@@ -1,4 +1,4 @@
-import { searchCities } from "../../../graphql/city/city.service";
+import { searchCities } from "../../../services/city.service";
 // Mock global fetch
 const mockFetch = jest.fn();
 global.fetch = mockFetch as jest.Mock;

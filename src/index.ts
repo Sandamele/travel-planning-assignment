@@ -1,14 +1,29 @@
-import {ApolloServer} from "@apollo/server";
-import {typeDefs, resolvers} from "./graphql";
-import {startStandaloneServer} from "@apollo/server/standalone";
+import { ApolloServer } from "@apollo/server";
+import { startStandaloneServer } from "@apollo/server/standalone";
 import dotenv from "dotenv";
+import { typeDefs, resolvers } from "./graphql";
 dotenv.config();
+
 const PORT: number = parseInt(process.env.PORT ?? "1338", 10);
-const server = new ApolloServer({typeDefs, resolvers});
-const startApolloServer = async () => {
-    const {url} = await startStandaloneServer(server, {listen: {port: PORT}})
-    console.log("Starting Apollo server...")
-    console.log(`url: ${url}`);
+interface MyContext {
+  weatherCache: Record<string, any>;
 }
+
+const server = new ApolloServer<MyContext>({
+  typeDefs,
+  resolvers,
+});
+
+const startApolloServer = async () => {
+  const { url } = await startStandaloneServer(server, {
+    listen: { port: PORT },
+    context: async () => {
+      return { weatherCache: {} };
+    },
+  });
+
+  console.log("Starting Apollo server...");
+  console.log(`url: ${url}`);
+};
 
 startApolloServer();
