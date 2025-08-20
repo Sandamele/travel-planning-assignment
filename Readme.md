@@ -17,6 +17,8 @@ current forecast.
 3. It evaluates the weather to determine which activities are most suitable.
 4. The API returns the weather forecast along with a ranked list of recommended activities.
 
+<img width="959" height="807" alt="Screenshot 2025-08-15 at 19 11 36" src="https://github.com/user-attachments/assets/f9ecd5e9-944d-4345-85ef-252eff33f287" />
+
 ## Pre-requisite
 - Nodejs 22+
 - Pnpm
@@ -37,6 +39,7 @@ Clone the repo
 ```
 
 # Project Structure
+```bash
 travel-planning-assignment/
 ├── node_modules/
 ├── src/
@@ -73,3 +76,4 @@ travel-planning-assignment/
 ├── pnpm-lock.yaml                    # Pnpm lock file
 ├── Readme.md                         # Project documentation
 └── tsconfig.json                     # TypeScript configuration
+```
