@@ -38,7 +38,7 @@ Clone the repo
     pnpm start
 ```
 
-# Project Structure
+## Project Structure
 ```bash
 travel-planning-assignment/
 ├── node_modules/
