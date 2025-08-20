@@ -14,13 +14,8 @@
     "@graphql-tools/merge": "^9.1.1",
     "@graphql-tools/schema": "^10.0.25",
     "@types/express": "^5.0.3",
-    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "express-rate-limit": "^8.0.1",
     "graphql": "^16.11.0",
-    "graphql-http": "^1.22.4",
-    "morgan": "^1.10.1",
     "nodemon": "^3.1.10",
     "run": "^1.5.0",
     "ts-node": "^10.9.2"
