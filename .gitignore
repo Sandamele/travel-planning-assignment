@@ -7,8 +7,14 @@ yarn-debug.log*
 yarn-error.log*
 /.pnp
 .pnp.js
+<<<<<<< HEAD
 .vscode/*
 .DS_STORE
 ./dist
 .env*
 !.env.example
+=======
+
+.vscode/*
+.DS_STORE
+>>>>>>> db93d42854a2d5a28429650edcca076c5aa9be0d
