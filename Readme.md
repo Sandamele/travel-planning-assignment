@@ -103,3 +103,5 @@ travel-planning-assignment/
 - Caching: Implement a caching system like Redis to store frequently queried city and weather data, reducing API calls and improving response times.
 - Expanded Activity Scoring System: Enhance the scoring algorithm to include additional weather parameters such as wind speed, precipitation probability, UV index, or water temperature. Also, validate whether the city actually supports the activity (e.g., beaches for surfing, ski resorts for skiing).
 - Rate Limiting: Add rate limiting to prevent abuse and ensure the API remains responsive under high traffic.
+
+Use of AI tools: ChatGPT was used to assist with writing some documentation and JSDocs.
